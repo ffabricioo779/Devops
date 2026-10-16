@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha página simples</title>
+  <style>
+    :root {
+      --fundo: #f6f8f4;
+      --texto: #1f2a24;
+      --suave: #55645b;
+      --destaque: #2f6f4f;
+      --linha: #d6ddd6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fundo: #14201a;
+        --texto: #e8efe9;
+        --suave: #a5b4aa;
+        --destaque: #7fcf9f;
+        --linha: #2c3d33;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fundo);
+      color: var(--texto);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 3.4rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .intro { font-size: 1.2rem; color: var(--suave); margin-bottom: 3rem; }
+    h2 { font-size: 1.3rem; margin: 2.5rem 0 0.5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--destaque); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--destaque); outline-offset: 3px; }
+    button {
+      font: inherit;
+      background: var(--destaque);
+      color: var(--fundo);
+      border: 0;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #mensagem { margin-top: 1rem; min-height: 1.7rem; color: var(--suave); }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--linha);
+      color: var(--suave);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Olá! Seja bem-vindo(a).</h1>
+    <p class="intro">Esta é uma página simples, feita em um único arquivo HTML. Edite o texto, troque as cores e use do jeito que quiser.</p>
+
+    <h2>Sobre esta página</h2>
+    <p>Aqui você pode colocar uma apresentação pessoal, o resumo de um projeto ou qualquer informação que queira compartilhar.</p>
+
+    <h2>O que você pode fazer</h2>
+    <ul>
+      <li>Abrir o arquivo com um duplo clique no navegador.</li>
+      <li>Editar o conteúdo em qualquer editor de texto.</li>
+      <li>Hospedar online quando quiser publicar.</li>
+    </ul>
+
+    <h2>Um toque de interação</h2>
+    <button id="botao" type="button">Clique aqui</button>
+    <p id="mensagem" aria-live="polite"></p>
+
+    <footer>Feito com HTML, CSS e um pouco de JavaScript.</footer>
+  </main>
+
+  <script>
+    var cliques = 0;
+    document.getElementById("botao").addEventListener("click", function () {
+      cliques++;
+      document.getElementById("mensagem").textContent =
+        cliques === 1 ? "Funcionou! Você clicou 1 vez." : "Você clicou " + cliques + " vezes.";
+    });
+  </script>
+</body>
+</html>
