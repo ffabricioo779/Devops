@@ -2,6 +2,8 @@
 
 ## Atualizado em 22/10/2026
 
+- Update README with student RA numbers (e951fd1) — ffabricioo779, 2026-10-22
+- chore(changelog): atualiza CHANGELOG.md [skip ci] (c1629b3) — github-actions[bot], 2026-10-22
 - Update README with author names (9c395dc) — ffabricioo779, 2026-10-22
 - chore(changelog): atualiza CHANGELOG.md [skip ci] (5da9bbb) — github-actions[bot], 2026-10-16
 - editor de sua preferencia (820e0fc) — gustavodemo901090-cmd, 2026-10-15
