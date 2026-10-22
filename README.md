@@ -1,4 +1,5 @@
 Devops trabalho
 
-Fabrício da Silva 
-Gustavo Oliveira Alves
+Fabrício da Silva RA: 250285 
+
+Gustavo Oliveira Alves RA: 250274
