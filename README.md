@@ -5,6 +5,8 @@ Para isso, criamos uma página web simples e configuramos automações para acom
 Equipe
 - Fabrício da Silva (ffabricioo779) — RA 250285
 - Gustavo Oliveira Alves — RA 250274
+
+
 Estrutura do repositório
 .
 ├── .github/
