@@ -2,6 +2,8 @@
 
 ## Atualizado em 23/10/2026
 
+- Add GitHub Actions workflow for release package (39167b2) — ffabricioo779, 2026-10-22
+- chore(changelog): atualiza CHANGELOG.md [skip ci] (755d9ac) — github-actions[bot], 2026-10-23
 - Revise README with project details and instructions (4f013f2) — ffabricioo779, 2026-10-22
 - chore(changelog): atualiza CHANGELOG.md [skip ci] (4076678) — github-actions[bot], 2026-10-22
 - Update README with student RA numbers (e951fd1) — ffabricioo779, 2026-10-22
