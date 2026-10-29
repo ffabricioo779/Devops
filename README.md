@@ -94,9 +94,23 @@ Tecnologias e ferramentas
 - GitHub Actions: execução das automações e publicação de releases.
 - YAML: configuração dos workflows.
 - GitHub CLI (gh): criação da release por meio da automação.
-Conclusão
-Com esse projeto, conseguimos conhecer melhor o funcionamento do GitHub e entender como o GitHub Actions pode facilitar algumas tarefas durante o desenvolvimento.
 
-A atividade também nos ajudou a praticar o trabalho em equipe, o controle de versões, a organização do histórico de alterações e a publicação de uma versão do projeto.
+Explicação da Action de Release
 
-Mesmo sendo um projeto simples, foi uma oportunidade de aplicar na prática conceitos importantes de DevOps que poderão ser utilizados em projetos futuros.
+# Compacta os arquivos do projeto
+- name: Zip folder
+  run: git archive --format=zip -o release.zip HEAD
+
+# Cria uma nova versão no GitHub
+- name: Create GitHub Release
+  env:
+    # Token que permite publicar a versão
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  run: |
+    # Cria a versão informada e anexa o arquivo ZIP
+    gh release create ${{ github.event.inputs.version }} release.zip \
+      --title "Release ${{ github.event.inputs.version }}" \
+      --generate-notes
+      # Gera automaticamente as notas da versão
+
+
