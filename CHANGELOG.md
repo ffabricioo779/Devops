@@ -1,7 +1,9 @@
 # Changelog
 
-## Atualizado em 23/10/2026
+## Atualizado em 29/10/2026
 
+- Explicação da Action de Release (10e9031) — ffabricioo779, 2026-10-29
+- chore(changelog): atualiza CHANGELOG.md [skip ci] (7820575) — github-actions[bot], 2026-10-23
 - Update team and repository structure in README (2bedae9) — ffabricioo779, 2026-10-22
 - chore(changelog): atualiza CHANGELOG.md [skip ci] (b8d0069) — github-actions[bot], 2026-10-23
 - Revise README content for conciseness and clarity (54609fc) — ffabricioo779, 2026-10-22
